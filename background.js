@@ -1,5 +1,3 @@
-// background.js
-
 // Function to redirect reddit.com pages to new.reddit.com
 function redirect(reddit) {
     let url = "https://new.reddit.com/" + reddit;
