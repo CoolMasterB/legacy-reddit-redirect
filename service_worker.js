@@ -14,17 +14,19 @@
 
 'use strict';
 
-chrome.declarativeNetRequest.onRuleMatchedDebug.addListener((e) => {
+const host = "https://old.reddit.com"
+const regex = /^https?:\/\/(?:www.reddit.com|reddit.com)([\S\s]*)/
+
+chrome.declarativeNetRequest.addListener(
   function(details){
-    return {redirectUrl: host + details.url.match(regex)[1]},
-      {
+    return {redirectUrl: host + details.url.match(regex)[1]}
+  },
+  {
     urls: [
       "*://www.reddit.com/*",
       "*://reddit.com/*"
     ]
   },
-});
-
-console.log('Service worker started.');
-
+  ["blocking"]
+);
 
