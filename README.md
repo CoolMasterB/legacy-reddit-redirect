@@ -2,7 +2,7 @@
 A simple chrome extension to redirect to the second version of Reddit's UI before the new UI update.
 
 ### Running
-1. Download this repo or download the 2 files `background.js` and `manifest.json` in a folder on your system.
+1. Download this repo or download the 2 files `service_worker.js` and `manifest.json` in a folder on your system.
 2. Open Extensions>Manage Extensions in your Browser.
 3. Turn on Developer mode in the top right corner
 4. Click **Load unpacked** extension on the top bar.
