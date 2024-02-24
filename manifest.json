@@ -1,9 +1,9 @@
 {
-  "name": "Old Reddit Redirect",
-  "version": "1.0.0",
-  "description": "Re-routes new reddit to the old reddit automatically",
+  "name": "Legacy Reddit Redirect",
+  "version": "1.0",
+  "description": "Re-routes New Reddit to the Legacy Reddit UI",
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["service_worker.js"]
   },
   "manifest_version": 2,
   "permissions": [
