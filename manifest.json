@@ -1,15 +1,10 @@
 {
-  "name": "Legacy Reddit Redirect",
-  "version": "1.0.0",
-  "description": "Redirects New Reddit to the Legacy Reddit UI automatically",
-  "background": {
-    "service_worker": "background.js"
-  },
-  "manifest_version": 3,
-  "permissions": [
-  "webRequest",
-  "*://www.reddit.com/*",
-  "*://reddit.com/*",
-  "webRequestBlocking"
-  ]
+	"name": "Legacy Reddit Redirect",
+	"version": "1.0",
+	"manifest_version": 3,
+	"omnibox": { "keyword": "new.reddit.com/" },
+	"description": "Redirects New Reddit to the Legacy Reddit UI automatically",
+	"background": {
+		"service_worker": "background.js"
+	}
 }
