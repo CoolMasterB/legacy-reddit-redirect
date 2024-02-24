@@ -6,6 +6,9 @@
     "background": {
         "service_worker": "background.js"
     },
+    "omnibox": {
+        "keyword": "reddit"
+    },
     "permissions": ["tabs"]
 }
 
