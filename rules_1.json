@@ -1,16 +1,1 @@
-[
-  {
-    "id": 1,
-    "priority": 1,
-    "action": {
-      "type": "redirect",
-      "redirect": {
-        "url": "https://new.reddit.com/"
-      }
-    },
-    "condition": {
-      "urlFilter": "https://reddit.com/*",
-      "resourceTypes": ["main_frame"]
-    }
-  }
-]
+
