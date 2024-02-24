@@ -1,5 +1,5 @@
 # legacy-reddit-redirect
-A simple chrome extension to redirect to the second version of Reddit's UI before the new UI update.
+A simple chrome extension to redirect to the second version of Reddit's UI before the new UI update. (based on manifest v2)
 
 ### Running
 1. Download this repo or download the 2 files `service_worker.js` and `manifest.json` in a folder on your system.
