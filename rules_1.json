@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "priority": 1,
+    "priority": 2,
     "action": {
       "type": "redirect",
       "redirect": {
-        "url": "https://new.reddit.com/"
+        "url": "new.reddit.com/"
       }
     },
     "condition": {
-      "urlFilter": "https://reddit.com/*",
+      "urlFilter": "reddit.com/*",
       "resourceTypes": ["main_frame"]
     }
   }
