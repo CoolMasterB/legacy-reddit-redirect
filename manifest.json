@@ -1,18 +1,30 @@
 {
-  "name": "Legacy Reddit Redirect",
+  "name": "URL Redirect",
   "version": "1.0",
-  "description": "Redirects Reddit to the Legacy Reddit UI",
+  "manifest_version": 3,
+  "description": "Uses the chrome.declarativeNetRequest API to redirect requests.",
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "service_worker.js"
   },
-  "manifest_version": 2,
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules_1.json"
+      }
+    ]
+  },
   "permissions": [
-  "webRequest",
-  "*://www.reddit.com/*",
-  "*://reddit.com/*",
-  "webRequestBlocking"
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "https://reddit.com/"
   ]
 }
+
 
 
 
