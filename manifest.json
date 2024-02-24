@@ -1,27 +1,16 @@
 {
-  "name": "URL Redirect",
-  "version": "1.0",
-  "manifest_version": 3,
-  "description": "Uses the chrome.declarativeNetRequest API to redirect requests.",
+  "name": "Old Reddit Redirect",
+  "version": "1.0.0",
+  "description": "Re-routes new reddit to the old reddit automatically",
   "background": {
-    "service_worker": "service_worker.js"
+    "scripts": ["background.js"]
   },
-  "declarative_net_request": {
-    "rule_resources": [
-      {
-        "id": "ruleset_1",
-        "enabled": true,
-        "path": "rules_1.json"
-      }
-    ]
-  },
+  "manifest_version": 2,
   "permissions": [
-    "declarativeNetRequest",
-    "declarativeNetRequestFeedback",
-    "declarativeNetRequestWithHostAccess"
-  ],
-  "host_permissions": [
-    "https://reddit.com/"
+  "webRequest",
+  "*://www.reddit.com/*",
+  "*://reddit.com/*",
+  "webRequestBlocking"
   ]
 }
 
