@@ -15,8 +15,14 @@
 'use strict';
 
 chrome.declarativeNetRequest.onRuleMatchedDebug.addListener((e) => {
-  const msg = `Navigation to ${e.request.url} redirected on tab ${e.request.tabId}.`;
-  console.log(msg);
+  function(details){
+    return {redirectUrl: host + details.url.match(regex)[1]},
+      {
+    urls: [
+      "*://www.reddit.com/*",
+      "*://reddit.com/*"
+    ]
+  },
 });
 
 console.log('Service worker started.');
