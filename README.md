@@ -11,4 +11,4 @@ A simple chrome extension to redirect to the second version of Reddit's UI befor
 7. This extension should appear in your list extensions, make sure it's on
 
 ### Common Issues
-1. If your downloading the zipped version of the repository, do make sure to unzip it and load the unzipped folder in Chrome.
+1. If you are downloading the zipped version of the repository, do make sure to unzip it and load the unzipped folder in Chrome.
